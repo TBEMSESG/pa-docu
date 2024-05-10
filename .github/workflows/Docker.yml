@@ -34,7 +34,7 @@ jobs:
           build-args: |
             DEVSTATE=PROD
             BACKEND=${{ env.TAG_NAME }}
-          tags: ircnega/pa-backend:${{ env.TAG_NAME }}
+          tags: ircnega/pa-docs:${{ env.TAG_NAME }}
           push: true
 
       - name: Image digest
