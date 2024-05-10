@@ -23,16 +23,10 @@ to use the app, at least a user and a family is needed
 ## Permissions
 [![permissions.png](../../../static/img/permissions.png)
 
-- [Calendar](Calendar)
-- [People](People)
-- [Tags](Tags)
-- [Todo's](Todo)
-- [Users](users)
-- [Family](Family)
 
 
 ## Tags
-See [Tags](Tags) details.
+See [Tags](tags) details.
 
 A tag is related to a family.
 
@@ -50,7 +44,7 @@ Tags can only be deleted if the following is true:
 
 
 ## Todo's
-See [Todo](Todo) details.
+See Todo details.
 
 A Todo is related to a family.
 
@@ -67,7 +61,7 @@ Todos can only be deleted if the following is true:
 - a familyUuid is provided at creation (in dev it's provided as http header `session_familyUuid`
 
 ## Persona
-See [People](People) details.
+See [People](people) details.
 
 A Persona is related to a family.
 #### Creating item
@@ -83,7 +77,7 @@ Personas can only be deleted if the following is true:
 - a familyUuid is provided at creation (in dev it's provided as http header `session_familyUuid`
 
 ## Appointment
-See [calendar](Calendar) details.
+See calendar details.
 
 An Appointment is related to a family.
 #### Creating item
