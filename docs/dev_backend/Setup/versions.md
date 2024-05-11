@@ -8,12 +8,29 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
-10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
 11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
+10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
+05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
 
 
 ## Release Note
+----
+### unknown
+#### Backend 0.9.x
+- Moved signup logic to backend (/signup endpoint)
+- some small error correction due to removed react-auth-kit in 0.9.7 
+
+#### Frontend 0.9.x
+- Removed signup logic from frontend.
+
+#### DataBase 0.1.x
+- no changes
+  
+#### Documentation 0.9.x
+- reordered Versions Table
+
+#### Docker Compose
+- no changes
 ----
 ### 11.05.2024
 #### Backend 0.9.8
