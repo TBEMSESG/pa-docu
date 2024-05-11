@@ -10,9 +10,24 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
 05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
 10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
+11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
 
 
 ## Release Note
+----
+### 11.05.2024
+#### Backend 0.9.8
+- Moved signup logic to backend (/signup endpoint)
+- some small error correction due to removed react-auth-kit in 0.9.7 
+
+#### Frontend 0.9.21
+- Removed signup logic from frontend.
+
+#### DataBase 0.1.0
+- no changes
+
+#### Docker Compose
+- no changes
 ----
 ### 10.05.2024
 #### Backend 0.9.7
