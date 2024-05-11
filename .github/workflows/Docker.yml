@@ -3,7 +3,7 @@ name: Docker Image CI PUSH 2
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
         with:
           context: .
           file: Dockerfile
-          tags: ircnega/pa-docs:${{ env.TAG_NAME }}
+          tags: ircnega/pa-docu:${{ env.TAG_NAME }}
           push: true
 
       - name: Image digest
