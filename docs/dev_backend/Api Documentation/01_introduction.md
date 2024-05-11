@@ -21,7 +21,7 @@ to use the app, at least a user and a family is needed
 
 
 ## Permissions
-[![permissions.png](../../../static/img/permissions.png)
+![permissions.png](../../../static/img/permissions.png)
 
 
 
