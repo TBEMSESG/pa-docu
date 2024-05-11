@@ -9,7 +9,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
 05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
-10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |          |   Only Server side cookies are used, httpOnly   |
+10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
 
 
 ## Release Note
