@@ -1,3 +1,11 @@
+---
+id: 03_signup login
+tags:
+  - frontend
+  - manual
+  - famcal
+---
+
 # Signup and Login
 
 # Signup
@@ -22,7 +30,7 @@ Then you will have to select if you are going to create a new family, or if you 
 Joining Existing Family is not yet implemented. To add a user to the Family, a DB interaction is needed.
 :::
 
-![Resistration](../../static/img/registration.png)
+![Resistration](../../../static/img/registration.png)
 
 :::info Login
 after the creation of the new user and family, the user is automaitically logged in

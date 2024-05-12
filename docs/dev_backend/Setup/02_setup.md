@@ -1,3 +1,11 @@
+---
+id: 02_setup
+tags:
+  - backend
+  - docker
+  - famcal
+---
+
 # Setup
 
 ![container.png](../../../static/img/container.png)

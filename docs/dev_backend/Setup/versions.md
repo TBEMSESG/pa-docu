@@ -1,3 +1,11 @@
+---
+id: 03_versions
+tags:
+  - backend
+  - docker
+  - famcal
+---
+
 # Supported Versions
 
 The following versions are tested to run together. Do not try to create other combinations. 
@@ -16,18 +24,18 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ## Release Note
 ----
-### unknown
-#### Backend 0.9.x
+### 12.05.2024
+#### Backend 0.9.9
 - added new Cookie with backend version information
 - recreated ME endpoint to only work with the signed tocken from the client
 
-#### Frontend 0.9.x
+#### Frontend 0.9.22
 - Modified /MePage to get the info from the /me endpoint instead of using the fc_user Cookie
 
-#### DataBase 0.1.x
+#### DataBase 0.1.0
 - no changes
   
-#### Documentation 0.9.x
+#### Documentation 0.9.3
 - reordered Versions Table
 
 #### Docker Compose
