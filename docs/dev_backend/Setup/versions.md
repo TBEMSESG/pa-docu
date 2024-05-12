@@ -22,7 +22,25 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
 
 
-## Release Note
+## Release Notes
+
+----
+### NextRelease
+#### Backend 0.9.x
+- no changes
+
+#### Frontend 0.9.x
+- no changes
+
+#### DataBase 0.1.x
+- no changes
+  
+#### Documentation 0.9.x
+- small updates
+
+#### Docker Compose
+- no changes
+
 ----
 ### 12.05.2024
 #### Backend 0.9.9
