@@ -8,6 +8,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+12.05.2024  |  0.9.22   |  0.9.9     |    0.1.0   |   0.9.3  | Optimized Cookie utilization
 11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
 10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
 05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
@@ -17,11 +18,11 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ----
 ### unknown
 #### Backend 0.9.x
-- Moved signup logic to backend (/signup endpoint)
-- some small error correction due to removed react-auth-kit in 0.9.7 
+- added new Cookie with backend version information
+- recreated ME endpoint to only work with the signed tocken from the client
 
 #### Frontend 0.9.x
-- Removed signup logic from frontend.
+- Modified /MePage to get the info from the /me endpoint instead of using the fc_user Cookie
 
 #### DataBase 0.1.x
 - no changes
