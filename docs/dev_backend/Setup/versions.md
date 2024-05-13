@@ -27,8 +27,25 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ## Release Notes
 
 ----
-### NextRelease
-#### Backend 0.9.10
+### next release
+#### Backend 0.9.x
+- reworked express middlewares to first identify the user based on jwt
+
+#### Frontend 0.9.x
+- no changes
+
+#### DataBase 0.1.x
+- no changes
+  
+#### Documentation 0.9.x
+- small updates
+
+#### Docker Compose
+- no changes
+
+----
+### 13.05.2024
+#### Backend 0.9.11
 - logging has been completely revorked to be more clean and organized.
 - added new env Variable for log level (debug, info, warn or error) if nothing is provided, then info is default.
 
