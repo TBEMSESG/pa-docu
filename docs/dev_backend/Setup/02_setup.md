@@ -63,6 +63,8 @@ services:
       port: '3005'
       mongo_connection: 'mongodb://db:27017/'
       mySecret: 'yourSecretString' # Change this String to secure your Installation
+      LOG_LEVEL: "debug" # Define the loglevel to be written to the logfile (debug, info, warn or error)
+      CONS_LOG_LEVEL: "debug" # Define the loglovel for the console (debug, info, warn or error)
 
   frontend:
     image: ircnega/pa-frontend:0.9.19

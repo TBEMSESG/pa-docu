@@ -16,18 +16,21 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+13.05.2024  |   0.9.22(u) |  0.9.11    |   0.1.0 (u) | 0.9.4   | backend logging reworked
 12.05.2024  |  0.9.22   |  0.9.9     |    0.1.0   |   0.9.3  | Optimized Cookie utilization
 11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
 10.05.2024  |0.9.20     |     0.9.7  |    0.1.0   |   0.9.1  |   Only Server side cookies are used, httpOnly   |
 05.05.2024  |   0.9.19   |  0.9.6    |    0.1.0   |          | -      |
 
+(u) = unchanged
 
 ## Release Notes
 
 ----
 ### NextRelease
-#### Backend 0.9.x
-- no changes
+#### Backend 0.9.10
+- logging has been completely revorked to be more clean and organized.
+- added new env Variable for log level (debug, info, warn or error) if nothing is provided, then info is default.
 
 #### Frontend 0.9.x
 - no changes
@@ -35,7 +38,7 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 #### DataBase 0.1.x
 - no changes
   
-#### Documentation 0.9.x
+#### Documentation 0.9.4
 - small updates
 
 #### Docker Compose
