@@ -30,9 +30,11 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ### next release
 #### Backend 0.9.x
 - reworked express middlewares to first identify the user based on jwt
+- modified genericRoute to check permissions before deleting or modifying an item. 
 
 #### Frontend 0.9.x
-- no changes
+- small correction in "family" requests to backend.
+- added "Delete Appointement in Appointmentes page (... - Delete)
 
 #### DataBase 0.1.x
 - no changes
@@ -53,7 +55,7 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 - small updates to debug page 
 - small styling updates
 
-#### DataBase 0.1.x
+#### DataBase 0.1.0
 - no changes
   
 #### Documentation 0.9.5
