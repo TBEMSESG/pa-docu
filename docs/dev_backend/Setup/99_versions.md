@@ -17,7 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.
+15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.6   |  Family Settings and permission optimization 
 13.05.2024  |   0.9.23 |  0.9.11    |   0.1.0 (u) | 0.9.5   | backend logging reworked
 12.05.2024  |  0.9.22   |  0.9.9     |    0.1.0   |   0.9.3  | Optimized Cookie utilization
 11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
