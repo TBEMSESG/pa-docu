@@ -1,5 +1,5 @@
 ---
-id: 03_versions
+id: 05_versions
 tags:
   - backend
   - docker
@@ -9,13 +9,15 @@ tags:
 # Supported Versions
 
 The following versions are tested to run together. Do not try to create other combinations. 
-:::note[]
+
+<!-- :::note[]
 From version 1.0.0 onwards, Backend and Frontend will always share the same version.
-:::
+::: -->
 
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.
 13.05.2024  |   0.9.23 |  0.9.11    |   0.1.0 (u) | 0.9.5   | backend logging reworked
 12.05.2024  |  0.9.22   |  0.9.9     |    0.1.0   |   0.9.3  | Optimized Cookie utilization
 11.05.2024  |  0.9.21       |  0.9.8    | 0.1.0    |   0.9.2      |   Moved signup Logic to backend and other small updates |
@@ -28,19 +30,24 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ----
 ### next release
-#### Backend 0.9.x
+#### Backend 0.9.24
 - reworked express middlewares to first identify the user based on jwt
-- modified genericRoute to check permissions before deleting or modifying an item. 
+- modified genericRoute to check permissions before searching, deleting or modifying an item. 
+- modified familyRoute to check permissions before searching, deleting or modifying an item. 
+- modified usersRoute to check permissions before searching, deleting or modifying an item. 
 
-#### Frontend 0.9.x
+#### Frontend 0.9.12
 - small correction in "family" requests to backend.
-- added "Delete Appointement in Appointmentes page (... - Delete)
+- added "Delete Appointement"-Button in Appointmentes page (... - Delete)
+- modified Settings - Family to Show Family details (only Fam Admin or server Admin)
+- Corrected Manual URL and API documentation URL and reordered menu items
 
-#### DataBase 0.1.x
+#### DataBase 0.1.0
 - no changes
   
-#### Documentation 0.9.x
+#### Documentation 0.9.6
 - small updates
+- Separated setup Pages
 
 #### Docker Compose
 - no changes
