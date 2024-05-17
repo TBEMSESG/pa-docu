@@ -17,6 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+17.05.2024  |   0.9.25   | 0.9.12 (u)|  0.1.0 (u) | 0.9.7   | Appointment Component modified
 15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.6   |  Family Settings and permission optimization 
 13.05.2024  |   0.9.23 |  0.9.11    |   0.1.0 (u) | 0.9.5   | backend logging reworked
 12.05.2024  |  0.9.22   |  0.9.9     |    0.1.0   |   0.9.3  | Optimized Cookie utilization
@@ -28,8 +29,27 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ## Release Notes
 
+
 ----
-### next release
+### 17.05.2024
+#### Backend 0.9.12
+- no changes
+
+#### Frontend 0.9.25
+- modified Appointment Component
+- updates Appointment Details view and header menu
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.7
+- small updates
+
+#### Docker Compose
+- no changes
+
+----
+### 15.05.2024
 #### Backend 0.9.24
 - reworked express middlewares to first identify the user based on jwt
 - modified genericRoute to check permissions before searching, deleting or modifying an item. 
