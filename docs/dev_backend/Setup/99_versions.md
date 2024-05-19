@@ -17,6 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+19.05.2024  |  0.9.26   |  0.9.13    |  0.1.0 (u) | 0.9.8    | InvitationCode Signup
 17.05.2024  |   0.9.25   | 0.9.12 (u)|  0.1.0 (u) | 0.9.7   | Appointment Component modified
 15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.6   |  Family Settings and permission optimization 
 13.05.2024  |   0.9.23 |  0.9.11    |   0.1.0 (u) | 0.9.5   | backend logging reworked
@@ -29,7 +30,24 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ## Release Notes
 
+----
+### 19.05.2024
+#### Backend 0.9.13
+- Added Endpoint to create an Invitation Code and to check for one
+- Handling InvitationCode based signup. 
 
+#### Frontend 0.9.26
+- Added details about InvitationCodes and InvitationCodes Creation (Family Settings)
+- 
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.8
+- small updates to the Fam API
+
+#### Docker Compose
+- no changes
 ----
 ### 17.05.2024
 #### Backend 0.9.12

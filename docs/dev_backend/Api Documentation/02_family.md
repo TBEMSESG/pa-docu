@@ -85,4 +85,28 @@ tags:
 ```
 
 > [!WARNING]
-> No Confirmation asked. It cannot be undone.
+> No Confirmation asked. This is an irreversible action.
+
+### Add an Invitation Code to join Family as signup
+
+#### Endpoint
+**`POST`**  `/api/family/code`
+
+#### Payload (JSON)
+```JSON
+{
+    "uuid" : "the desired FamilyID" ,
+    "invitationCode": "a 6 digit code" # like "ABG4RT"
+}
+``` 
+
+
+### Check for an Invitation Code to join Family as signup
+
+#### Endpoint
+**`GET`**  `/api/family/<uuid>/code/<code>`
+
+#### Payload (JSON)
+```JSON
+{}
+``` 
