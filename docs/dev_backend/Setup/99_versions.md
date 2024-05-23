@@ -17,7 +17,8 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-22.05.2024  |  0.9.27   | 0.9.14    |  0.1.0 (u)  | 0.9.9   | ToDos Added
+23.05.2024  | 0.9.27(u) | 0.9.15    |   0.1.0 (u) |  0.9.10   | Password issue corrected
+22.05.2024  |  0.9.27   | 0.9.14 (u)  |  0.1.0 (u)  | 0.9.9   | ToDos Added
 19.05.2024  |  0.9.26   |  0.9.13    |  0.1.0 (u) | 0.9.8    | InvitationCode Signup
 17.05.2024  |   0.9.25   | 0.9.12 (u)|  0.1.0 (u) | 0.9.7   | Appointment Component modified
 15.05.2024  |   0.9.24  |  0.9.12    |  0.1.0 (u) | 0.9.6   |  Family Settings and permission optimization 
@@ -31,7 +32,25 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ## Release Notes
 ----
-### next release
+### 23.05.2024
+#### Backend 0.9.15
+- modified password pattern to support for special chars
+
+#### Frontend 0.9.27
+- no changes
+
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.10
+- small updates
+
+#### Docker Compose
+- no changes
+
+----
+### 22.05.2024
 #### Backend 0.9.14
 - updated Logging _ new daily log rotation
 
