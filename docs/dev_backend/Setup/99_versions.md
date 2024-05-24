@@ -17,6 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+24.05.2024  |  0.9.28   |  0.9.16    |   0.1.0 (u) |  0.9.11   | Note issue and cookie error
 23.05.2024  | 0.9.27(u) | 0.9.15    |   0.1.0 (u) |  0.9.10   | Password issue corrected
 22.05.2024  |  0.9.27   | 0.9.14 (u)  |  0.1.0 (u)  | 0.9.9   | ToDos Added
 19.05.2024  |  0.9.26   |  0.9.13    |  0.1.0 (u) | 0.9.8    | InvitationCode Signup
@@ -31,7 +32,29 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 (u) = unchanged
 
 ## Release Notes
+
 ----
+### 24.05.2024
+#### Backend 0.9.16
+- modified schemas to allow empty notes
+- corrected small code issues
+- modified cookie creation at signup to reflect the same as at login
+
+#### Frontend 0.9.28
+- modified create todo/persona/tag item modal to reflect error messages
+- optimized Footer 
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.11
+- small updates
+
+#### Docker Compose
+- no changes
+
+----
+
 ### 23.05.2024
 #### Backend 0.9.15
 - modified password pattern to support for special chars
