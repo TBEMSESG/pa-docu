@@ -17,7 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-
+25.05.2024  | 0.9.31    | 0.9.17 (u)  | 0.1.0 (u) | 0.9.14    | issue with cookies and sockets
 25.05.2024  | 0.9.30    | 0.9.17     |  0.1.0 (u)  |  0.9.13  | Signup and Sockets update
 24.05.2024  |  0.9.29   |  0.9.16    |   0.1.0 (u) |  0.9.12   | Note issue and cookie error
 23.05.2024  | 0.9.27(u) | 0.9.15    |   0.1.0 (u) |  0.9.10   | Password issue corrected
@@ -34,6 +34,25 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 (u) = unchanged
 
 ## Release Notes
+
+----
+### XX.05.2024
+#### Backend 0.9.1x
+- no changes
+
+#### Frontend 0.9.31
+- removed debug info from the login page
+- corrected issue with missing cookie and sockets
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.1x
+- small updates
+
+#### Docker Compose
+- no changes
+
 ----
 ### 25.05.2024
 #### Backend 0.9.17
