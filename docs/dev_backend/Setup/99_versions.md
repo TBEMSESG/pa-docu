@@ -17,6 +17,8 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+
+25.05.2024  | 0.9.30    | 0.9.17     |  0.1.0 (u)  |  0.9.13  | Signup and Sockets update
 24.05.2024  |  0.9.29   |  0.9.16    |   0.1.0 (u) |  0.9.12   | Note issue and cookie error
 23.05.2024  | 0.9.27(u) | 0.9.15    |   0.1.0 (u) |  0.9.10   | Password issue corrected
 22.05.2024  |  0.9.27   | 0.9.14 (u)  |  0.1.0 (u)  | 0.9.9   | ToDos Added
@@ -32,7 +34,26 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 (u) = unchanged
 
 ## Release Notes
+----
+### 25.05.2024
+#### Backend 0.9.17
+- added Socket Admin UI interface
+- corrected Signup Issues not logging users correctly if invitation code was used
 
+#### Frontend 0.9.30
+- modified sockets to attach username and uuid to the socket instance
+- modified Admin debug page
+- modified Navigation 
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.13
+- small updates
+
+#### Docker Compose
+- no changes
+  
 ----
 ### 24.05.2024
 #### Backend 0.9.16
