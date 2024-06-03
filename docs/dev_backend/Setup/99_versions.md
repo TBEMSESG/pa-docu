@@ -17,7 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-28.05.2024  | 0.9.33    | 0.9.18      | 0.1.0 (u) | 0.9.18  |Toast and design updates Error with images
+28.05.2024  | 0.9.33    | 0.9.18      | 0.1.0 (u) | 0.9.19  |Toast and design updates Error with images
 25.05.2024  | 0.9.31    | 0.9.17 (u)  | 0.1.0 (u) | 0.9.14    | issue with cookies and sockets
 25.05.2024  | 0.9.30    | 0.9.17     |  0.1.0 (u)  |  0.9.13  | Signup and Sockets update
 24.05.2024  |  0.9.29   |  0.9.16    |   0.1.0 (u) |  0.9.12   | Note issue and cookie error
@@ -35,9 +35,25 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 (u) = unchanged
 
 ## Release Notes
-
 ----
 ### xx.05.2024
+#### Backend 0.9.xx
+- no changes
+
+#### Frontend 0.9.xx
+- no changes
+
+#### DataBase 0.1.0
+- no changes
+  
+#### Documentation 0.9.xx
+- small updates
+  
+#### Docker Compose
+- no changes
+
+----
+### 28.05.2024
 #### Backend 0.9.18
 - Modified socket.io emitter to show information about the user and the Item
 
@@ -49,7 +65,7 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 #### DataBase 0.1.0
 - no changes
   
-#### Documentation 0.9.18
+#### Documentation 0.9.19
 - small updates
 - Manual pages Update
 

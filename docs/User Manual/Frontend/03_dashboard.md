@@ -14,7 +14,7 @@ The dashboard (or /home) displays today's and tomorrow's appointments in a user-
 All family appointments are displayed in the dashboard, not filtered by family user. Filter will be added later
 :::
 
-![emptydashboard.png](../../../static/img/manual/emptydashboard.png)
+![An empty Dashboard](../../../static/img/manual/01_emptyDashboard.png)
 
 ## Header 
 
