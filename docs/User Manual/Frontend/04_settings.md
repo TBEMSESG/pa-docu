@@ -13,7 +13,7 @@ toc_max_heading_level: 4
 
 The Settings page gives access to the `Tags` , the `People` and the `Family` Details
 
-![emptysettings.png](../../../static/img/manual/emptysettings.png)
+![emptysettings.png](../../../static/img/manual/01_emptysettings.png)
 
 ## Tags 
 Tags are used to categorize Appointments and Task.

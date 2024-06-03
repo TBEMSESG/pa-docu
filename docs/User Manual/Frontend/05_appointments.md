@@ -17,5 +17,5 @@ If no Apopintements are found then a message is displayed instead:
 ### Create appointments
 Click on the blue `+` to create a new Appointment
 
-![createappointment.png](../../../static/img/manual/createappointment.png)
+![createappointment.png](../../../static/img/manual/01_createappointment.png)
 
