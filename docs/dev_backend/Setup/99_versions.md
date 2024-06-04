@@ -17,7 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
-
+04.06.2024  | 0.9.33(u) | 0.9.18 (u) 7 1.0.0      | 0.9.21  | Docu update and DB initialization
 28.05.2024  | 0.9.33    | 0.9.18      | 0.1.0 (u) | 0.9.20  |Toast and design updates Error with images
 25.05.2024  | 0.9.31    | 0.9.17 (u)  | 0.1.0 (u) | 0.9.14    | issue with cookies and sockets
 25.05.2024  | 0.9.30    | 0.9.17     |  0.1.0 (u)  |  0.9.13  | Signup and Sockets update
@@ -37,7 +37,7 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 
 ## Release Notes
 ----
-### xx.05.2024
+### 04.06.2024
 #### Backend 0.9.xx
 - no changes
 
