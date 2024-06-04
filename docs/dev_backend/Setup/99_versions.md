@@ -47,7 +47,7 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 #### DataBase 1.0.0
 - Modified DB to start an empty mongoDB container and initialize the Family DB (with the needed indexes)
   
-#### Documentation 0.9.xx
+#### Documentation 0.9.21
 - Updated Setup, Docker Compose and build yourself pages
   
 #### Docker Compose
