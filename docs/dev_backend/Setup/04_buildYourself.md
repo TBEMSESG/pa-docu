@@ -9,10 +9,9 @@ tags:
 
 If you prefer to build yourself:
 
-:::info
-As you run the system without docker compose, think about the needed port mappings. you will need to expose all the ports, not only 80 for the frontend. 
-We encourage to use the docker compose approach.
-:::
+Create a folder somewhere in your system, let's say its `/script`
+
+`cd /script` to enter this folder
 
 ### Frontend
 Get files from GitHub
@@ -24,17 +23,7 @@ Get files from GitHub
 then install dependencies
 `npm install`
 
-then run 
-`npm run build`
-
-to have a local version of the frontend.
-
-To create the image run 
-`docker build -t frontend .`
-
-to run the container run
-`docker run -d -p 80:80 --name frontend frontend` 
-
+`cd ..` to go back to `/script`
 ### Backend
 
 Get files from Github
@@ -45,56 +34,82 @@ Get files from Github
 then install dependencies
 `npm install`
 
-Create a .env file.
-Modify the .env file to reflect your environment
-
-```env
-; APPLICATION SETTINGS
-
-; Define the port the backend will listen to:
-
-port = <enter your port here as Number eg: 3005>
-mongo_connection = <Set your mongo connection line eg: 'mongodb://localhost:27017'>
-
-; will change to mongodb://db:27017 after deployment with docker-compose
-
-
-; SECURITY SETTINGS
-; Important : change the current "yourSecretString" to any random string:
-
-mySecret = <Set your secret eg: "yourSecretString">
-
-; Define the loglevel to be written to the logfile (debug, info, warn or error)
-LOG_LEVEL: "debug" 
-
-; Define the loglEvel for the console (debug, info, warn or error)
-CONS_LOG_LEVEL: "debug" 
-```
-then build the image
-`docker build -t backend .`
-
-to start the container run 
-`docker run -d -p 3005:3005 --name backend backend`
-
-
+`cd ..` to go back to `/script`
 
 ### Database
 Get files from Github
 `git clone https://github.com/thomasIBAW/pa-database.git`
 
-`cd pa-database` to enter the directory
+:::info
+There is nothing to do at db level, as we will create a completely new db that will be initialized at build.
+:::
 
-then build the image
-`docker build -t database .`
+## Build all images 
 
-to start the container run 
-`docker run -d -p 27017:27017 --name db -v mongo-data:/data/db database` 
+create a file called `docker-compose.yml` in `/script`
 
-This starts the DB container, creates the database and collections, and initialize it with the needed indexes. The DB is now reachable on port 27017
+Add the folloewing content to the newly created file
+
+```yaml
+services:
+  db:
+    build: /pa-database
+    # ports:
+    #   - "27017"
+    volumes:
+      - mongo-data:/data/db
+  backend:
+    build: /pa_backend
+    # ports:
+    #   - "3005"
+    restart: always
+    environment: # Check and adapt these settings
+      port: '3005'
+      mongo_connection: 'mongodb://db:27017/' # only change if you know what you do :) 
+      mySecret: 'changeThisSecret' # ACTION NEEDED -> Change this String to secure your Installation
+      LOG_LEVEL: "debug" # Define the loglevel to be written to the logfile (debug, info, warn or error)
+      CONS_LOG_LEVEL: "debug" # Define the loglovel for the console (debug, info, warn or error)
+  frontend:
+    build:
+      context: /pa-frontend
+      args:
+        VITE_DEVSTATE: PROD # only change if you know what you do :)
+    ports:
+      - "80:80"
+    restart: always
+    environment:
+      VITE_DEVSTATE: PROD # only change if you know what you do :)
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://db:27017/
+      ME_CONFIG_BASICAUTH_USERNAME: "admin" # you can change this String to your mongo-express web username
+      ME_CONFIG_BASICAUTH_PASSWORD: "youradminpassword" # ACTION NEEDED -> Change this String to your mongo-express web password
+
+volumes:
+  mongo-data:
+
+```
+
+Run `docker compose build` 
+
+run `docker compose up -d`
+
+
+### Important considerations
+
+This starts the DB container, creates the database and collections, and initialize it with the needed indexes. The DB is only reachable from within the docker compose created network.
+
+If you need to run the frontend on a different port (because 80 is already in use), the use 5173, which is already in the allowed oringins. If you need to use another port, then you have to adapt CORS settings on `/pa_backend/index.js`.
+
+mongo-express is used to access the db for troubleshooting and debug. mongo-express is not needed for family calendar to work. 
 
 :::warning
-As the primary idea is to run all containers using docker compose (isolated network and only expose the frontend), I have not added any username or passwords to mongoDB. Feel free to modify the `Dockerfile`
+As the primary idea is to run all containers using docker compose (isolated network and only expose the frontend), I have not added any username or passwords to mongoDB. Feel free to modify the `Dockerfile` in case you wuold prefer to have one.
 :::
 
 ## Connection
-once all the container run, open a broser to `http://localhost:80`  
+once all the containers are running, open a broser to `http://localhost:80`  
