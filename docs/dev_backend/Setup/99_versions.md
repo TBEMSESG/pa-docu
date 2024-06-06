@@ -17,6 +17,7 @@ From version 1.0.0 onwards, Backend and Frontend will always share the same vers
 ## Versions Table
 Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 ------------|-----------|------------|------------|----------|:------|
+06.06.2024  | 0.9.33(u) | 0.9.19     | 1.0.0      | 0.9.22  | Docu update
 04.06.2024  | 0.9.33(u) | 0.9.18 (u) | 1.0.0      | 0.9.21  | Docu update and DB initialization
 28.05.2024  | 0.9.33    | 0.9.18      | 0.1.0 (u) | 0.9.20  |Toast and design updates Error with images
 25.05.2024  | 0.9.31    | 0.9.17 (u)  | 0.1.0 (u) | 0.9.14    | issue with cookies and sockets
@@ -36,6 +37,24 @@ Date        |  Frontend | Backend    | DataBase   | Docs     | Note  |
 (u) = unchanged
 
 ## Release Notes
+
+----
+### 06.06.2024
+#### Backend 0.9.19
+- Checks if mySecret has been changed from the default one
+
+#### Frontend 0.9.xx
+- no changes
+
+#### DataBase 1.0.0
+- no changes
+  
+#### Documentation 0.9.22
+- Updated Setup, Docker Compose and build yourself pages
+  
+#### Docker Compose
+- no changes
+
 ----
 ### 04.06.2024
 #### Backend 0.9.xx

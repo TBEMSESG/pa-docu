@@ -29,7 +29,7 @@ services:
     environment: # Check and adapt these settings
       port: '3005'
       mongo_connection: 'mongodb://db:27017/' # only change if you know what you do :) 
-      mySecret: 'yourSecretString' # ACTION NEEDED -> Change this String to secure your Installation
+      mySecret: 'changeThisSecret' # ACTION NEEDED -> Change this String to secure your Installation
       LOG_LEVEL: "debug" # Define the loglevel to be written to the logfile (debug, info, warn or error)
       CONS_LOG_LEVEL: "debug" # Define the loglovel for the console (debug, info, warn or error)
   frontend:
@@ -56,12 +56,14 @@ volumes:
 
 Start the family calendar by running `docker compose up -d`
 
+once all the containers are running, open a broser to `http://localhost:80`  
+
 :::info
 The only container that will be reachable is the `frontend`. If you need to reach the `backend` for any API integration, then you will have to map a port to the internal port. 
 
 The DB Data is mounted in a volume for persistence.
 
-VITE_DEVSTATE: PROD inf `frontend` means that the connection to the `backend` is proxied directly from nginx to the `backend`  container. If this value is changed, then the `backend` container will be accessed using `http://localhost:3005`(hardcoded)
+VITE_DEVSTATE: PROD in `frontend` means that the connection to the `backend` is proxied directly from nginx to the `backend`  container. If this value is changed, then the `backend` container will be accessed using `http://localhost:3005`(hardcoded)
 
 mongo-express is used to access the db for troubleshooting and debug. mongo-express is not needed for family calendar to work. 
 :::
